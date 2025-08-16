@@ -20,7 +20,7 @@ with st.container():
     # 2) TEMA QUE PRETENDE TRATAR
     st.header("Tema: Análise da relação entre Infraestrutura e Desempenho Educacional - Anos Iniciais da Rede Municipal do Espírito Santo em 2023")
     st.write(
-        "O objetivo deste projeto é analisar a relação da infraestutura escolar com o desempenho educacional no ano de 2023 das escolas públicas municipais do Estado do Espírito Santo com foco anos inciais (fundamental I) para extrair insights sobre oportunidades de melhorias nas políticas públicas."
+        "O objetivo deste projeto é analisar a relação da infraestutura escolar com o desempenho educacional no ano de 2023 das escolas públicas municipais do Estado do Espírito Santo com foco nos anos inciais (Fundamental I) para extrair insights sobre oportunidades de melhorias nas políticas públicas."
     )
     st.write("---") # Adiciona uma linha divisória
 
@@ -30,35 +30,32 @@ with st.container():
 st.sidebar.header("Navegue pelas Seções")
 secao = st.sidebar.selectbox(
     'Selecione a página:',
-    ['Página Inicial', 'Análise de Produtos', 'Análise Geográfica', 'Previsão de Vendas']
+    ['Página Inicial', 'Análise do IDEB 2023', 'Análise do Censo 2023', 'Análise dos Insights']
 )
 
 # Lógica para exibir conteúdo baseado na seleção da sidebar
 if secao == 'Página Inicial':
     st.header("Visão Geral do Projeto")
     st.write("Nesta seção, apresentaremos os objetivos do projeto, a metodologia utilizada e um resumo dos principais resultados que serão explorados nas outras seções.")
-    # No futuro, aqui você poderia adicionar KPIs gerais como:
-    # - Total de Vendas
-    # - Número de Clientes
-    # - Ticket Médio
+    # No futuro, aqui você poderia adicionar KPIs
 
-elif secao == 'Análise de Produtos':
-    st.header("Análise de Produtos")
-    st.write("Aqui vamos explorar quais são os produtos mais vendidos, as categorias mais lucrativas e a relação entre diferentes produtos. Gráficos de barras e de pizza serão utilizados para visualizar esses dados.")
+elif secao == 'Análise do IDEB 2023':
+    st.header("Análise do IDEB 2023")
+    st.write("Aqui vamos explorar os dados do IDEB 2023 segmentados pelos munícipios do ES. Gráficos serão utilizados para visualizar esses dados.")
     # Espaço reservado para futuros gráficos e tabelas
-    st.text("Em breve: Gráfico de produtos mais vendidos.")
+    st.text("Em breve: Mapas e Gráficos.")
 
-elif secao == 'Análise Geográfica':
-    st.header("Análise Geográfica")
-    st.write("Nesta seção, o foco será a análise de vendas por região. Vamos visualizar em um mapa de onde vêm a maioria dos pedidos e qual o desempenho de vendas por estado ou cidade.")
+elif secao == 'Análise do Censo 2023':
+    st.header("Análise do Censo 2023")
+    st.write("Aqui vamos explorar os dados do Censo 2023 segmentados pelos munícipios do ES. Gráficos serão utilizados para visualizar esses dados.")
     # Espaço reservado para futuros mapas
-    st.text("Em breve: Mapa de calor de vendas por estado.")
+    st.text("Em breve: Mapas e Gráficos.")
 
-elif secao == 'Previsão de Vendas':
-    st.header("Previsão de Vendas")
-    st.write("Utilizando modelos de séries temporais, esta seção apresentará uma previsão de vendas para os próximos meses, ajudando no planejamento de estoque e estratégias de marketing.")
+elif secao == 'Análise dos Insights':
+    st.header("Análise dos Insights")
+    st.write("Aqui vamos explorar os insights a partir da junção e análise dos dados do IDEB 2023 e do Censo 2023 segmentados pelos munícipios do ES. Gráficos serão utilizados para visualizar esses dados.")
     # Espaço reservado para futuros gráficos de previsão
-    st.text("Em breve: Gráfico de previsão de vendas futuras.")
+    st.text("Em breve: Mapas e Gráficos.")
 
 st.write("---")
 
