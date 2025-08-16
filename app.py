@@ -18,10 +18,9 @@ with st.container():
     st.title("Web App do Leonardo Cruz de Andrade")
     
     # 2) TEMA QUE PRETENDE TRATAR
-    st.header("Tema: Análise da relação entre Infraestrutura e Desempenho Educacional, com foco nos Anos Iniciais da Rede Municipal do Espírito Santo (2023)")
+    st.header("Tema: Análise da relação entre Infraestrutura e Desempenho Educacional - Anos Iniciais da Rede Municipal do Espírito Santo em 2023")
     st.write(
-        "O objetivo deste projeto é analisar a relação da infraestutura escolar com o desempenho educacional no ano de 2023 das escolas públicas municipais do Estado do Espírito Santo"
-        "com foco anos inciais (fundamental I) para extrair insights sobre oportunidades de melhorias nas políticas públicas."
+        "O objetivo deste projeto é analisar a relação da infraestutura escolar com o desempenho educacional no ano de 2023 das escolas públicas municipais do Estado do Espírito Santo com foco anos inciais (fundamental I) para extrair insights sobre oportunidades de melhorias nas políticas públicas."
     )
     st.write("---") # Adiciona uma linha divisória
 
@@ -72,9 +71,10 @@ with st.container():
     )
     st.markdown(
         """
-        - **Olist Dataset:** Um conjunto de dados público e anonimizado sobre e-commerce disponível no Kaggle, contendo informações de pedidos, produtos, clientes e avaliações.
-        - **Dados de Geolocalização:** Arquivos com informações de CEPs brasileiros para a criação dos mapas.
-        - **Dados Internos Fictícios:** Criação de uma base de dados simulada para complementar as análises.
+        - **Ideb (Índice de Desenvolvimento da Educação Básica):** Base de dados "divulgacao_anos_iniciais_municipios_2023", disponibilizada pelo Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep). Contém os resultados do principal indicador de qualidade da educação básica no Brasil, permitindo a análise do desempenho das escolas e municípios para os anos iniciais do ensino fundamental.
+        - **IBGE (Instituto Brasileiro de Geografia e Estatística):** Arquivos da base "BR_Municipios_2022", que oferecem dados geoespaciais e informações estatísticas sobre os municípios brasileiros. Estes dados são essenciais para a criação de mapas, análises territoriais e para a contextualização socioeconômica das localidades estudadas.
+        - **Censo Escolar: "Microdados_ed_basica_2023"**, levantamento detalhado realizado pelo Inep. Esta base de dados abrange informações sobre escolas, matrículas, docentes, turmas e infraestrutura da educação básica no Brasil, sendo fundamental para análises aprofundadas sobre o sistema educacional.
+        
         """
     )
 
