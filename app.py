@@ -10,7 +10,7 @@ st.set_page_config(page_title="Meu Primeiro Web App", layout="wide")
 # st.container() cria um bloco para agrupar elementos
 with st.container():
     st.subheader("Instituto Federal do Espírito Santo - Campus Serra")
-    st.subheader("Pós-Graduação em Mineração de dados Educacionais - SEDU")
+    st.subheader("Pós-Graduação em Mineração de Dados Educacionais - SEDU")
     st.subheader("Disciplina Ferramentas e Soluções em Nuvem")
     st.subheader("Professor Maxwell Eduardo Monteiro")
     st.subheader("Olá, seja bem-vindo(a)!")
@@ -18,11 +18,10 @@ with st.container():
     st.title("Web App do Leonardo Cruz de Andrade")
     
     # 2) TEMA QUE PRETENDE TRATAR
-    st.header("Tema: Análise de Vendas de E-commerce")
+    st.header("Tema: Análise da relação entre Infraestrutura e Desempenho Educacional, com foco nos Anos Iniciais da Rede Municipal do Espírito Santo (2023)")
     st.write(
-        "Este é o meu primeiro Web App usando Streamlit! "
-        "O objetivo deste projeto é analisar dados de vendas de um e-commerce fictício "
-        "para extrair insights sobre produtos mais vendidos, tendências sazonais e perfil de clientes."
+        "O objetivo deste projeto é analisar a relação da infraestutura escolar com o desempenho educacional no ano de 2023 das escolas públicas municipais do Estado do Espírito Santo"
+        "com foco anos inciais (fundamental I) para extrair insights sobre oportunidades de melhorias nas políticas públicas."
     )
     st.write("---") # Adiciona uma linha divisória
 
