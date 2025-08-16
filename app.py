@@ -9,10 +9,13 @@ st.set_page_config(page_title="Meu Primeiro Web App", layout="wide")
 # --- CABEÇALHO / SEÇÃO PRINCIPAL ---
 # st.container() cria um bloco para agrupar elementos
 with st.container():
+    st.subheader("Instituto Federal do Espírito Santo - Campus Serra")
     st.subheader("Pós-Graduação em Mineração de dados Educacionais - SEDU")
+    st.subheader("Disciplina Ferramentas e Soluções em Nuvem")
+    st.subheader("Professor Maxwell Eduardo Monteiro")
     st.subheader("Olá, seja bem-vindo(a)!")
     # 1) SEU NOME
-    st.title("Web App do [Seu Nome Aqui]")
+    st.title("Web App do Leonardo Cruz de Andrade")
     
     # 2) TEMA QUE PRETENDE TRATAR
     st.header("Tema: Análise de Vendas de E-commerce")
