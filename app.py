@@ -107,9 +107,11 @@ with st.container():
 # 3) A DIVISÃO DAS SEÇÕES DO APP
 # Usamos st.sidebar para criar uma barra lateral de navegação
 st.sidebar.header("Navegue pelas Seções")
+
 secao = st.sidebar.selectbox(
     'Selecione a página:',
-    ['Página Inicial', 'Análise de Produtos', 'Análise Geográfica', 'Previsão de Vendas']
+    ['Página Inicial', 'Análise de Produtos', 'Análise Geográfica', 'Previsão de Vendas'],
+    key='pagina_selecionada'  # Adicione esta linha
 )
 
 # Lógica para exibir conteúdo baseado na seleção da sidebar
