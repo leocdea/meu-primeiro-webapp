@@ -9,7 +9,7 @@ st.set_page_config(page_title="Meu Primeiro Web App-TESTETTTTT", layout="wide")
 # --- CABEÇALHO / SEÇÃO PRINCIPAL ---
 # st.container() cria um bloco para agrupar elementos
 with st.container():
-    st.subheader("Instituto Federal do Espírito Santo - Campus Serra-TESTESTTSS")
+    st.subheader("Instituto Federal do Espírito Santo - Campus Serra-teste de novo")
     st.subheader("Pós-Graduação em Mineração de Dados Educacionais - SEDU")
     st.subheader("Disciplina Ferramentas e Soluções em Nuvem")
     st.subheader("Professor Maxwell Eduardo Monteiro")
