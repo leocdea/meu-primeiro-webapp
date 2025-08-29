@@ -4,12 +4,12 @@ import streamlit as st
 # --- CONFIGURAÇÃO DA PÁGINA ---
 # st.set_page_config define as configurações iniciais da página,
 # como o título que aparece na aba do navegador e o layout.
-st.set_page_config(page_title="Meu Primeiro Web App-TESTETTTTT", layout="wide")
+st.set_page_config(page_title="Meu Primeiro Web App", layout="wide")
 
 # --- CABEÇALHO / SEÇÃO PRINCIPAL ---
 # st.container() cria um bloco para agrupar elementos
 with st.container():
-    st.subheader("Instituto Federal do Espírito Santo - Campus Serra-teste de novo")
+    st.subheader("Instituto Federal do Espírito Santo - Campus Serra")
     st.subheader("Pós-Graduação em Mineração de Dados Educacionais - SEDU")
     st.subheader("Disciplina Ferramentas e Soluções em Nuvem")
     st.subheader("Professor Maxwell Eduardo Monteiro")
