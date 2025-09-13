@@ -11,7 +11,7 @@ st.set_page_config(layout="wide", page_title="Dashboard de Formações")
 def carregar_dados():
     """Carrega e pré-processa os dados do CSV."""
     try:
-        df = pd.read_csv('base de dados/Compilado_Formações_2024-copy.csv', sep=';')
+        df = pd.read_csv('Compilado_Formações_2024-copy.csv', sep=';')
         
         # Colunas numéricas que precisam de tratamento
         numeric_cols = [
