@@ -2,6 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
+import os  # Importa a biblioteca OS, essencial para a correção
 
 # Configuração da página para um layout mais amplo e título
 st.set_page_config(layout="wide", page_title="Dashboard de Formações")
@@ -9,9 +10,22 @@ st.set_page_config(layout="wide", page_title="Dashboard de Formações")
 # --- FUNÇÕES AUXILIARES ---
 @st.cache_data
 def carregar_dados():
-    """Carrega e pré-processa os dados do CSV."""
+    """Carrega e pré-processa os dados do CSV de forma robusta."""
     try:
-        df = pd.read_csv('Compilado_Formações_2024-copy.csv', sep=';')
+        # --- INÍCIO DA CORREÇÃO ---
+
+        # Nome exato do seu arquivo de dados
+        NOME_ARQUIVO = 'Compilado_Formações_2024-copy.csv'
+        
+        # Este código encontra o caminho absoluto do script e junta com o nome do arquivo.
+        # Isso garante que o arquivo seja encontrado independentemente de onde o script é executado.
+        caminho_script = os.path.dirname(__file__)
+        caminho_arquivo = os.path.join(caminho_script, NOME_ARQUIVO)
+        
+        # Lê o CSV usando o caminho completo e seguro
+        df = pd.read_csv(caminho_arquivo, sep=';')
+        
+        # --- FIM DA CORREÇÃO ---
         
         # Colunas numéricas que precisam de tratamento
         numeric_cols = [
@@ -28,7 +42,7 @@ def carregar_dados():
         
         return df
     except FileNotFoundError:
-        st.error("Arquivo 'Compilado_Formações_2024-copy.csv' não encontrado. Verifique se o arquivo está na pasta correta.")
+        st.error(f"Arquivo '{NOME_ARQUIVO}' não encontrado. Verifique se o nome do arquivo no código é exatamente igual ao nome no GitHub (incluindo letras maiúsculas/minúsculas).")
         return None
 
 @st.cache_data
